@@ -1,0 +1,65 @@
+/* العنصر الرئيسي (control) */
+.custom-select__control {
+    direction: rtl;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-shadow: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background-color: white;
+    min-height: 38px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* عند التركيز */
+  .custom-select__control--is-focused {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+  }
+  
+  /* عند التحويم */
+  .custom-select__control:hover {
+    border-color: #007bff;
+  }
+  
+  /* نص القيمة المختارة */
+  .custom-select__single-value {
+    color: #333;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  
+  /* القائمة المنسدلة */
+  .custom-select__menu {
+    z-index: 100;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0 4px 11px rgba(0, 0, 0, 0.1);
+    margin-top: 4px;
+  }
+  
+  /* كل خيار */
+  .custom-select__option {
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: normal;
+    transition: background-color 0.2s ease;
+  }
+  
+  /* عند التحويم على الخيار */
+  .custom-select__option-is-focused {
+    background-color: #e7f1ff  !important;
+    color: #000 !important;
+  }
+  
+  .custom-select__option--is-selected {
+    background-color: #007bff  !important;
+    color: #000 !important;
+    font-weight: bold !important;
+  }
+  
+  

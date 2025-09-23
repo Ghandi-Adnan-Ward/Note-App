@@ -1,0 +1,194 @@
+.container{
+    max-width: 600;
+    margin: 30px auto;
+    padding: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    direction: rtl;
+  }
+  .title {
+    text-align: center;
+    margin-bottom: 20px;
+    color:#2c3e50;
+    font-size: 32px;
+    font-weight: bold;
+  }
+  .inputRow {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .textarea {
+    flex: 1;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    resize: vertical
+  }
+  .btn{
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor:pointer;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    
+    width: 150px;
+  }
+  .grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+    
+  }
+  
+  .noteCard {
+    /* position: relative;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    padding: 25px 15px 15px 35px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    word-break: break-word;
+    transition: transform 0.2s ease; */
+    position: relative;
+    background-color: #ecf0f1;
+    border-radius: 8px;
+    padding: 25px 15px 15px 35px; /* top right bottom left */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    word-break: break-word;
+    white-space: pre-wrap;
+
+  }
+  
+  .noteText {
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    white-space: pre-wrap;
+  }
+  
+  .deleteBtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    color: #e74c3c;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 500px) {
+    .grid {
+      grid-template-columns: 1fr; /* بطاقة واحدة في كل صف */
+      gap: 10px;
+    }
+  
+    .noteCard {
+      position: relative;
+      background-color: #ecf0f1;
+      border-radius: 8px;
+      padding: 12px 15px 15px 35px; /* top right bottom left */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      word-break: break-word;
+      white-space: pre-wrap;    }
+  
+    .noteText {
+      font-size: 15px;
+    }
+  
+    .deleteBtn {
+      font-size: 18px;
+      top: 6px;
+      left: 6px;
+    }
+  }
+  .select {
+    padding: 8px;
+    font-size: 14px;
+    margin-inline: 8px;
+  
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .select:hover {
+    background-color: #f1f1f1;
+    border-color: #888;
+  }
+  
+  .select:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+  }
+  
+
+ 
+  
+  /* .filters {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+  } */
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* العناصر الداخلية */
+  .filters > div
+     {
+    flex: 1;
+    min-width: 150px;
+  }
+  .searchInput {
+    margin-top: 22px;
+    height: 38px;
+    padding: 0 10px    !important;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    line-height: 38px !important;       /* مهم لموازنة الارتفاع */
+    min-width: 150px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  
+  .searchInput:focus {
+    border-color: #007bff;
+    outline: none;
+    text-align: center;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+  }
+  
+  
+  /* عند الشاشات الصغيرة جدًا */
+  @media (max-width: 600px) {
+    .filters {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .filters > div,
+    .filters .searchInput {
+      width: 100%;
+    }
+  }
+  
+  
