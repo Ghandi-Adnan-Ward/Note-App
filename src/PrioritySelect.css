@@ -1,25 +1,3 @@
-/* .priority-select-container {
-    direction: rtl;
-    font-size: 14px;
-  }
-  
-  .priority-select-container .react-select__control {
-    border-radius: 6px;
-    padding-inline: 4px;
-  }
-  
-  @media (max-width: 600px) {
-    .priority-select-container {
-      font-size: 12px;
-    }
-  
-    .priority-select-container .react-select__control {
-      padding-inline: 2px;
-    }
-  }
-   */
-
-   /* المربع الأساسي (control) */
 .priority-select__control {
   direction: rtl;
   border-radius: 6px;
