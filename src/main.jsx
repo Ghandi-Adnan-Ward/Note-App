@@ -6,8 +6,8 @@ import { HashRouter   } from "react-router-dom";
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {/* < HashRouter basename='/Note-App'> */}
+    < HashRouter basename='/Note-App'>
         <App />
-    {/* </HashRouter> */}
+    </HashRouter>
   </StrictMode>,
 )
